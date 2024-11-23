@@ -1,2 +1,2 @@
-WARNING reinkpy.usb      No module named 'usb'
-WARNING reinkpy.zeroconf No module named 'zeroconf'
+WARNING BIGBUTTONPROJECT.usb      No module named 'usb'
+WARNING BIGBUTTONPROJECT.zeroconf No module named 'zeroconf'

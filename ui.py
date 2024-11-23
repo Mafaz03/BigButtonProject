@@ -44,7 +44,7 @@ class Ui_MainWindow(object):
 		command = f"sudo python3 {path}/script.py"
 		output = subprocess.run(command, shell=True, capture_output=True, text=True)
 		if output.returncode != 0: self.label.setText(output.stderr.splitlines()[-1])	 
-		else: self.label.setText(output.stdout)	 
+		else: self.label.setText("reset successful")	 
 
 		# Hiding pushbutton from the main window 
 		# after button get clicked. 

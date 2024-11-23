@@ -13,7 +13,7 @@ DB = {}
 def get_db():
     # global DB
     if not DB:
-        with importlib.resources.files('reinkpy').joinpath('epson.toml').open('rb') as f:
+        with importlib.resources.files('BIGBUTTONPROJECT').joinpath('epson.toml').open('rb') as f:
             specs = tomllib.load(f)['EPSON']
         for s in specs:
             if 'wkey' in s:
@@ -356,7 +356,7 @@ def search_bin(bstr=b'', yield_raw=True):
 if __name__ == '__main__':
     import argparse
     c = argparse.ArgumentParser(
-        prog="python -m reinkpy.epson",
+        prog="python -m BIGBUTTONPROJECT.epson",
         description="Helpers for Epson printers",
         epilog="")
     c.add_argument('--search-file', type=argparse.FileType('rb'),
